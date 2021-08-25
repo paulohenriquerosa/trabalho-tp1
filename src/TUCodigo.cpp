@@ -2,38 +2,55 @@
 
 #include "../headers/TUCodigo.h"
 
-void TUCodigo::setUp(){
+void TUCodigo::setUp()
+{
     codigo = new Codigo();
     estado = SUCESSO;
 }
 
-void TUCodigo::tearDown(){
+void TUCodigo::tearDown()
+{
     delete codigo;
 }
 
-void TUCodigo::testarCenarioSucesso(){
-    try{
+void TUCodigo::testarCenarioSucesso()
+{
+    try
+    {
         codigo->setCodigo(CODIGO_VALIDO);
-        if(codigo->getCodigo() != CODIGO_VALIDO){
+        if (codigo->getCodigo() != CODIGO_VALIDO)
+        {
             estado = FALHA;
         }
-    }catch(invalid_argument &execao){
+    }
+    catch (invalid_argument &execao)
+    {
         estado = FALHA;
     }
 }
 
-void TUCodigo::testarCenarioFalha(){
-    try{
+void TUCodigo::testarCenarioFalha()
+{
+    try
+    {
         codigo->setCodigo(CODIGO_INVALIDO);
         estado = FALHA;
-    }catch(invalid_argument &excecao){
-        if(codigo->getCodigo() == CODIGO_INVALIDO){
-            estado = FALHA; 
+    }
+    catch (invalid_argument &excecao)
+    {
+        if (codigo->getCodigo() == CODIGO_INVALIDO)
+        {
+            estado = FALHA;
         }
     }
 }
 
-int TUCodigo::run(){
+/// \brief Executa o teste de unidade. Primeiro cria um objeto para o teste,
+/// depois, testa um cenário de sucesso, em seguida, teste um cenário de falha, e,
+/// por fim, deleta o objeto criado, retornando se o teste causou alguma falha ou não.
+/// @return int estado
+int TUCodigo::run()
+{
     setUp();
     testarCenarioSucesso();
     testarCenarioFalha();

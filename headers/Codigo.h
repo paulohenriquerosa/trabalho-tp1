@@ -1,4 +1,4 @@
-/* Autora: Maria Claudia Campos Martins 17/0109968 */
+/// @author: Maria Claudia Campos Martins 17/0109968
 
 #ifndef CODIGO_H
 #define CODIGO_H
@@ -12,16 +12,18 @@
 
 using namespace std;
 
-class Codigo {
-    /* Formato LLDDDD
-        - cada L é letra maiúscula (A-Z)
-        - cada D é dígito (0-9) */
-    private:
-        string codigo;
-        void validar(string);
-    public:
-        void setCodigo(string);
-        string getCodigo() const; 
+/// \brief Classe responsável pela identificação das entidades através de
+/// uma string que contém letras e dígitos.
+
+class Codigo
+{
+private:
+    string codigo;
+    void validar(string);
+
+public:
+    void setCodigo(string);
+    string getCodigo() const;
 };
 
 #endif //CODIGO_H

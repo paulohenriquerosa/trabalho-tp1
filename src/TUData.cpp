@@ -2,38 +2,55 @@
 
 #include "../headers/TUData.h"
 
-void TUData::setUp(){
+void TUData::setUp()
+{
     data = new Data();
     estado = SUCESSO;
 }
 
-void TUData::tearDown(){
+void TUData::tearDown()
+{
     delete data;
 }
 
-void TUData::testarCenarioSucesso(){
-    try{
+void TUData::testarCenarioSucesso()
+{
+    try
+    {
         data->setData(DATA_VALIDA);
-        if(data->getData() != DATA_VALIDA){
+        if (data->getData() != DATA_VALIDA)
+        {
             estado = FALHA;
         }
-    }catch(invalid_argument &excecao){
+    }
+    catch (invalid_argument &excecao)
+    {
         estado = FALHA;
     }
 }
 
-void TUData::testarCenarioFalha(){
-    try{
+void TUData::testarCenarioFalha()
+{
+    try
+    {
         data->setData(DATA_INVALIDA);
         estado = FALHA;
-    }catch(invalid_argument &excecao){
-        if(data->getData() == DATA_INVALIDA){
-            estado = FALHA; 
+    }
+    catch (invalid_argument &excecao)
+    {
+        if (data->getData() == DATA_INVALIDA)
+        {
+            estado = FALHA;
         }
     }
 }
 
-int TUData::run(){
+/// \brief Executa o teste de unidade. Primeiro cria um objeto para o teste,
+/// depois, testa um cenário de sucesso, em seguida, teste um cenário de falha, e,
+/// por fim, deleta o objeto criado, retornando se o teste causou alguma falha ou não.
+/// @return int estado
+int TUData::run()
+{
     setUp();
     testarCenarioSucesso();
     testarCenarioFalha();

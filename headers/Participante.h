@@ -10,19 +10,20 @@
 
 using namespace std;
 
-class Participante {
-    private:
-        Matricula* matricula;
-        string nome;
-        string sobrenome;
-        string email;
-        string telefone;
-        string senha;
-        string cargo;
-    
+/// \brief Classe relativa a dados do participante da peça
+class Participante
+{
+private:
+    Matricula *matricula;
+    string nome;
+    string sobrenome;
+    string email;
+    string telefone;
+    string senha;
+    string cargo;
+
     // Definir os métodos set e get, além dos outros de requisitos funcionais
     // Incluir outros dominios que estejam faltando
-    
 };
 
 #endif //PARTICIPANTE_H

@@ -10,11 +10,13 @@
 
 using namespace std;
 
-class Sala {
-    private:
-        Codigo* idenditicador;
-        string nome;
-        string capacidade;
+/// \brief Classe relativa às salas de espetáculos.
+class Sala
+{
+private:
+    Codigo *idenditicador;
+    string nome;
+    string capacidade;
 
     // terminar de incluir outros dominios e metodos
 };

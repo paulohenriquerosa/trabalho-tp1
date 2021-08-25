@@ -11,13 +11,15 @@
 
 using namespace std;
 
-class Sessao {
-    private:
-        Codigo* identificador;
-        Data* data;
-        string horario;
+/// \brief Classe que caracteriza uma sessão do espetáculo.
+class Sessao
+{
+private:
+    Codigo *identificador;
+    Data *data;
+    string horario;
 
-    // terminar de incluir outros dominios e metodos 
+    // terminar de incluir outros dominios e metodos
 };
 
 #endif //SESSAO_H
