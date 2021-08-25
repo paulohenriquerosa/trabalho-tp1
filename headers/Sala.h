@@ -14,11 +14,13 @@ using namespace std;
 class Sala
 {
 private:
-    Codigo *idenditicador;
+    Codigo identificador;
     string nome;
     string capacidade;
 
-    // terminar de incluir outros dominios e metodos
+public:
+    void setCodigo(const Codigo &);
+    Codigo getCodigo() const;
 };
 
 #endif //SALA_H

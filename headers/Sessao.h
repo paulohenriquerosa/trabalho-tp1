@@ -15,11 +15,15 @@ using namespace std;
 class Sessao
 {
 private:
-    Codigo *identificador;
-    Data *data;
+    Codigo identificador;
+    Data data;
     string horario;
 
-    // terminar de incluir outros dominios e metodos
+public:
+    void setCodigo(const Codigo &);
+    Codigo getCodigo() const;
+    void setData(const Data &);
+    Data getData() const;
 };
 
 #endif //SESSAO_H

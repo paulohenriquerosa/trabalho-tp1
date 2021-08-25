@@ -15,12 +15,16 @@ using namespace std;
 class Peca
 {
 private:
-    Codigo *identificador;
+    Codigo identificador;
     string nome;
-    Tipo *tipo;
+    Tipo tipo;
     string classificacao;
 
-    //completar com os metodos e outros dominios
+public:
+    void setCodigo(const Codigo &);
+    Codigo getCodigo() const;
+    void setTipo(const Tipo &);
+    Tipo getTipo() const;
 };
 
 #endif //PECA_H

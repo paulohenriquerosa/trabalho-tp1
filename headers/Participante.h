@@ -14,7 +14,7 @@ using namespace std;
 class Participante
 {
 private:
-    Matricula *matricula;
+    Matricula matricula;
     string nome;
     string sobrenome;
     string email;
@@ -22,8 +22,9 @@ private:
     string senha;
     string cargo;
 
-    // Definir os métodos set e get, além dos outros de requisitos funcionais
-    // Incluir outros dominios que estejam faltando
+public:
+    void setMatricula(const Matricula &);
+    Matricula getMatricula() const;
 };
 
 #endif //PARTICIPANTE_H
