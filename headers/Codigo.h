@@ -1,7 +1,7 @@
 /* Autora: Maria Claudia Campos Martins 17/0109968 */
 
-#ifndef CODIGO
-#define CODIGO
+#ifndef CODIGO_H
+#define CODIGO_H
 
 #include <stdexcept>
 #include <stdio.h>
@@ -24,4 +24,4 @@ class Codigo {
         string getCodigo() const; 
 };
 
-#endif //CODIGO
+#endif //CODIGO_H

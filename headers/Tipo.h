@@ -1,7 +1,7 @@
 /* Autora: Maria Claudia Campos Martins 17/0109968 */
 
-#ifndef TIPO
-#define TIPO
+#ifndef TIPO_H
+#define TIPO_H
 
 #include <stdexcept>
 #include <stdio.h>
@@ -22,4 +22,4 @@ class Tipo {
         string getTipo() const;
 };
 
-#endif //TIPO
+#endif //TIPO_H

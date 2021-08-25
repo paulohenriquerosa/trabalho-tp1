@@ -1,7 +1,7 @@
 /* Autora: Maria Claudia Campos Martins 17/0109968 */
 
-#ifndef MATRICULA
-#define MATRICULA
+#ifndef MATRICULA_H
+#define MATRICULA_H
 
 #include <stdexcept>
 #include <stdio.h>
@@ -22,4 +22,4 @@ class Matricula {
         string getMatricula() const;
 };
 
-#endif //MATRICULA
+#endif //MATRICULA_H

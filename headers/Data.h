@@ -1,7 +1,7 @@
 /* Autora: Maria Claudia Campos Martins 17/0109968 */
 
-#ifndef DATA
-#define DATA
+#ifndef DATA_H
+#define DATA_H
 
 #include <stdexcept>
 #include <stdio.h>
@@ -27,4 +27,4 @@ class Data {
         string getData() const;
 }; 
 
-#endif // DATA
+#endif // DATA_H
