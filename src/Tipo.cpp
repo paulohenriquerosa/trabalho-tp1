@@ -1,3 +1,5 @@
+/* Autora: Maria Claudia Campos Martins 17/0109968 */
+
 #include "../headers/Tipo.h"
 
 void Tipo::validar(string tipo){
