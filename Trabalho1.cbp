@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Trabalho1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Trabalho1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Trabalho1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="headers/Codigo.h" />
+		<Unit filename="headers/Data.h" />
+		<Unit filename="headers/Matricula.h" />
+		<Unit filename="headers/Participante.h" />
+		<Unit filename="headers/Peca.h" />
+		<Unit filename="headers/Sala.h" />
+		<Unit filename="headers/Sessao.h" />
+		<Unit filename="headers/TUCodigo.h" />
+		<Unit filename="headers/TUData.h" />
+		<Unit filename="headers/TUMatricula.h" />
+		<Unit filename="headers/TUTipo.h" />
+		<Unit filename="headers/Tipo.h" />
+		<Unit filename="src/Codigo.cpp" />
+		<Unit filename="src/Data.cpp" />
+		<Unit filename="src/Matricula.cpp" />
+		<Unit filename="src/Participante.cpp" />
+		<Unit filename="src/Peca.cpp" />
+		<Unit filename="src/Sala.cpp" />
+		<Unit filename="src/Sessao.cpp" />
+		<Unit filename="src/TUCodigo.cpp" />
+		<Unit filename="src/TUData.cpp" />
+		<Unit filename="src/TUMatricula.cpp" />
+		<Unit filename="src/TUTipo.cpp" />
+		<Unit filename="src/Tipo.cpp" />
+		<Unit filename="src/main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
