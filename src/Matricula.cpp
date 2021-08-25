@@ -8,7 +8,7 @@ void Matricula::validar(string matricula){
     int tamanho = matricula.length();
 
     if(tamanho == 5){
-        for(int i = 1; i<matricula.length(); i++){
+        for(int i = 1; i< tamanho; i++){
             if(matricula[i] == matricula[i-1]){
                 digitoInvalido = true;
                 break;
@@ -27,7 +27,7 @@ void Matricula::validar(string matricula){
     }
     if(tamanhoInvalido){
         throw invalid_argument("Tamanho de matricula não permitido.");
-    }    
+    }
 }
 
 void Matricula::setMatricula(string matricula){
