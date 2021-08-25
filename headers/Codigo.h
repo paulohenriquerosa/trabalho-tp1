@@ -1,10 +1,15 @@
-#ifndef DOMINIOS_H_INCLUDED
-#define DOMINIOS_H_INCLUDED
+#ifndef CODIGO
+#define CODIGO
 
 #include <stdexcept>
+#include <stdio.h>
+#include <array>
+#include <algorithm>
+#include <string.h>
+#include <iostream>
+
 using namespace std;
 
-/* Dominio Codigo */
 class Codigo {
     /* Formato LLDDDD
         - cada L é letra maiúscula (A-Z)
@@ -17,9 +22,4 @@ class Codigo {
         string getCodigo() const; 
 };
 
-inline string Codigo::getCodigo() const{
-    return codigo;
-}
-
-
-#endif 
+#endif //CODIGO
