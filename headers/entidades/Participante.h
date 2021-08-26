@@ -21,7 +21,7 @@ class Participante
 private:
     Matricula matricula;
     Nome nome;
-    //Nome sobrenome;
+    Nome sobrenome;
     Email email;
     Telefone telefone;
     Senha senha;
@@ -32,8 +32,8 @@ public:
     Matricula getMatricula() const;
     void setNome(const Nome &);
     Nome getNome() const;
-    //void setSobrenome(const Nome &);
-    //Nome getSobrenome() const;
+    void setSobrenome(const Nome &);
+    Nome getSobrenome() const;
     void setEmail(const Email &);
     Email getEmail() const;
     void setTelefone(const Telefone &);

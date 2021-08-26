@@ -34,17 +34,17 @@ Nome Participante::getNome() const
 /// \brief Armazena o sobrenome do usuario cadastrado no atributo matr�cula
 /// do objeto Participante
 /// @param Nome nome
-// void Participante::setSobrenome(const Nome &sobrenome)
-// {
-//     this->sobrenome = sobrenome;
-// }
+void Participante::setSobrenome(const Nome &sobrenome)
+{
+    this->sobrenome = sobrenome;
+}
 
-// /// \brief Retorna uma string que indica o sobrenome do objeto da classe Participante
-// /// @return Nome nome
-// Nome Participante::getSobrenome() const
-// {
-//     return sobrenome;
-// }
+/// \brief Retorna uma string que indica o sobrenome do objeto da classe Participante
+/// @return Nome nome
+Nome Participante::getSobrenome() const
+{
+    return sobrenome;
+}
 
 /// \brief Armazena o email do usuario cadastrado no atributo email
 /// do objeto Participante
