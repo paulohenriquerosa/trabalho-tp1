@@ -8,7 +8,7 @@
 
 using namespace std;
 
-vector<string> split (const string &s, char delim) {
+vector<string> separar (const string &s, char delim) {
     vector<string> result;
     stringstream ss (s);
     string item;
@@ -23,7 +23,7 @@ vector<string> split (const string &s, char delim) {
 
 void Horario::validar(string horario){
 
-  vector<string> horario_formatado = split(horario, ':');
+  vector<string> horario_formatado = separar(horario, ':');
 
   vector<string> minutos = {
     "00",

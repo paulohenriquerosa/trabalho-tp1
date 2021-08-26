@@ -12,7 +12,7 @@ void Senha::validar(string senha) {
     throw invalid_argument("Argumento invalido");
   }
 
-  vector<string> caracteres_permitidos = {
+  array<string, 7> caracteres_permitidos = {
     "!",
     "@",
     "#",
@@ -22,11 +22,11 @@ void Senha::validar(string senha) {
     "?",
   };
 
-  for ( auto i : senha ){
+  for (auto i : senha ){
 
-    if(find(caracteres_permitidos.begin(), caracteres_permitidos.end(), i) == caracteres_permitidos.end()){
-      throw invalid_argument("Argumento invalido");
-    }
+    // if(find(caracteres_permitidos.begin(), caracteres_permitidos.end(), i) == caracteres_permitidos.end()){
+    //   throw invalid_argument("Argumento invalido");
+    // }
 
     int repets = std::count(senha.begin(), senha.end(), i);
 

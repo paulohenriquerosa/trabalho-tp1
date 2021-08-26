@@ -14,7 +14,7 @@ void Classificacao::validar(string classificacao){
     "18"
   };
 
-  if(find( valid_arguments.begin(), valid_arguments.end(), classificacao) == valid_arguments.end()){
+  if(find(valid_arguments.begin(), valid_arguments.end(), classificacao) == valid_arguments.end()){
     throw invalid_argument("Argumento invalido");
   }
 

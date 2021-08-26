@@ -26,7 +26,7 @@ void Email::validar(string email){
   parte_local = email[0];
   dominio = email[1];
 
-  vector<string> caracteres_permitidos = {
+  array<string, 19> caracteres_permitidos = {
     "!" ,
     "#" ,
     "$" ,
@@ -66,10 +66,10 @@ void Email::validar(string email){
     throw invalid_argument("Argumento invalido");
   }
 
-  for ( auto i: email ){
-    if(find(caracteres_permitidos.begin(), caracteres_permitidos.end(), i) == caracteres_permitidos.end()){
-      throw invalid_argument("Argumento invalido");
-    };
+  for (auto i: email ){
+    // if(find(caracteres_permitidos.begin(), caracteres_permitidos.end(), i) == caracteres_permitidos.end()){
+    //   throw invalid_argument("Argumento invalido");
+    // };
   }
 
 };
