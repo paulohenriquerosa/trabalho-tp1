@@ -1,3 +1,5 @@
+/// @author: Paulo Henrique Rosa 17/0163687
+
 #include <iostream>
 #include <sstream>
 #include <vector>
@@ -48,7 +50,8 @@ void Senha::validar(string senha) {
 };
 
 
-
+/// \brief Armazena a senha do participante recebido no atributo do objeto da classe Senha
+/// @param string senha
 void Senha::setSenha(string senha){
   validar(senha);
   this->senha = senha;

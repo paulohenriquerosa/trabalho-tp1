@@ -1,3 +1,5 @@
+/// @author: Paulo Henrique Rosa 17/0163687
+
 #include <iostream>
 #include <sstream>
 #include <vector>
@@ -77,6 +79,8 @@ void Email::validar(string email){
 };
 
 
+/// \brief Armazena o email do participante recebido no atributo do objeto da classe Email
+/// @param string email
 void Email::setEmal(string email){
   validar(email);
   this->email = email;

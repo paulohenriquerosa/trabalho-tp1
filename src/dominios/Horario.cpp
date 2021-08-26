@@ -44,6 +44,8 @@ void Horario::validar(string horario){
 
 };
 
+/// \brief Armazena o horário da peça recebido no atributo do objeto da classe Horario
+/// @param string horario
 void Horario::setHorario(string horario){
   validar(horario);
   this->horario = horario;
