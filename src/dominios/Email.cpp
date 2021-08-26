@@ -67,9 +67,11 @@ void Email::validar(string email){
   }
 
   for (auto i: email ){
-    // if(find(caracteres_permitidos.begin(), caracteres_permitidos.end(), i) == caracteres_permitidos.end()){
-    //   throw invalid_argument("Argumento invalido");
-    // };
+    string s;
+    s = i;
+    if(find(caracteres_permitidos.begin(), caracteres_permitidos.end(), s) == caracteres_permitidos.end()){
+      throw invalid_argument("Argumento invalido");
+    };
   }
 
 };
