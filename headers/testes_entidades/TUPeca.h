@@ -15,8 +15,6 @@
 using namespace std;
 
 /// \brief Classe de teste de unidade da entidade Peca
-
-
 class TUPeca {
 private:
     const string IDENTIFICADOR_VALIDO   = "Paulo Henrique";

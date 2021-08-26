@@ -15,8 +15,6 @@
 using namespace std;
 
 /// \brief Classe de teste de unidade da entidade Pariticipante
-
-
 class TUParticipante {
 private:
     const  string MATRICULA_VALIDO   = "Paulo Henrique";

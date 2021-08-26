@@ -2,16 +2,21 @@
 
 #include "../../headers/testes_entidades/TUParticipante.h"
 
-
+/// \brief Inicializa a instância e variável ao inciar o teste
+/// @return void
 void TUParticipante::setUp(){
     participante = new Participante();
     estado = SUCESSO;
 }
 
+/// \brief Deleta instância criado após o final do teste
+/// @return void
 void TUParticipante::tearDown(){
     delete participante;
 }
 
+/// \brief Testa os cenário de sucesso dos atributos
+/// @return void
 void TUParticipante::testarCenarioSucesso(){
     Matricula matricula;
     matricula.setMatricula(MATRICULA_VALIDO);
@@ -56,6 +61,10 @@ void TUParticipante::testarCenarioSucesso(){
         estado = FALHA;
 }
 
+/// \brief Executa o teste de unidade. Primeiro cria um objeto para o teste,
+/// depois, testa um cenário de sucesso, em seguida, teste um cenário de falha, e,
+/// por fim, deleta o objeto criado, retornando se o teste causou alguma falha ou não.
+/// @return int estado
 int TUParticipante::run(){
     setUp();
     testarCenarioSucesso();
