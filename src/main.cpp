@@ -19,6 +19,10 @@
 #include "../headers/testes_dominios/TUMatricula.h"
 #include "../headers/testes_dominios/TUTipo.h"
 #include "../headers/testes_dominios/TUData.h"
+#include "../headers/testes_dominios/TUClassificacao.h"
+#include "../headers/testes_dominios/TUEmail.h"
+#include "../headers/testes_dominios/TUHorario.h"
+#include "../headers/testes_dominios/TUSenha.h"
 
 int main()
 {
