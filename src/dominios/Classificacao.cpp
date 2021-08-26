@@ -20,6 +20,8 @@ void Classificacao::validar(string classificacao){
 
 }
 
+/// \brief Armazena a classificação da peça recebido no atributo do objeto da classe Classificacao
+/// @param string classificacao
 void Classificacao::setClassificacao(string classificacao){
   validar(classificacao);
   this->classificacao = classificacao;

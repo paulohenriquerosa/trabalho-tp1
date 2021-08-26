@@ -25,6 +25,8 @@ class Classificacao {
 };
 
 
+/// \brief Retorna a classificação da peça armazenada no objeto da classe Classificacao
+/// @return string classificacao
 inline string Classificacao::getClassificacao() const {
   return classificacao;
 };

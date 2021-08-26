@@ -12,7 +12,7 @@
 
 using namespace std;
 
-/// \brief Classe responsável pela classificação da entidade Peça
+/// \brief Classe responsável pela senha da entidade Participante
 
 class Senha
 {
@@ -25,6 +25,8 @@ public:
   string getSenha() const;
 };
 
+/// \brief Retorna a senha do participante armazenada no objeto da classe Senha
+/// @return string senha
 inline string Senha::getSenha() const
 {
   return senha;

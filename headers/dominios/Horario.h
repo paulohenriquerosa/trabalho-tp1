@@ -12,9 +12,7 @@
 
 using namespace std;
 
-/// \brief Classe responsável pela classificação da entidade Peça
-
-
+/// \brief Classe responsável pelo horário da entidade Sessao
 class Horario {
   private:
     string horario;
@@ -25,6 +23,8 @@ class Horario {
   string getHorario() const;
 
 };
+/// \brief Retorna o horario da peça armazenada no objeto da classe Horário
+/// @return string horario
 
 inline string Horario::getHorario() const {
   return horario;

@@ -12,7 +12,7 @@
 
 using namespace std;
 
-/// \brief Classe responsável pela classificação da entidade Peça
+/// \brief Classe responsável pela email da entidade Participante
 
 
 class Email {
@@ -25,6 +25,9 @@ class Email {
   string getEmail() const;
 
 };
+
+/// \brief Retorna o email do usuário armazenada no objeto da classe Email
+/// @return string email
 
 inline string Email::getEmail() const {
   return email;
