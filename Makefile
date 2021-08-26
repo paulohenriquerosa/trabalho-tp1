@@ -1,7 +1,7 @@
-CPP      = g++
-SRCS       = $(shell find src/ -name *.cpp)
+CPP      = g++ -std=c++11
+SRCS       = $(shell find src/* -name *.cpp)
 OBJ      = $(addprefix obj/,$(SRCS:%.cpp=%.o))
-DIR      = $(addprefix obj/,$(shell ls -d src/))
+DIR      = $(addprefix obj/,$(shell ls -d src/*))
 BIN      = a.out
 RM       = rm -rf
 
