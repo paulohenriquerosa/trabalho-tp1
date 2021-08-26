@@ -14,19 +14,19 @@ using namespace std;
 
 /// \brief Classe responsável pela classificação da entidade Peça
 
+class Senha
+{
+private:
+  string senha;
+  void validar(string);
 
-class Senha {
-  private:
-    string senha;
-    void validar(string);
-
-  public:
+public:
   void setSenha(string);
   string getSenha() const;
-
 };
 
-inline string Senha::getSenha() const {
+inline string Senha::getSenha() const
+{
   return senha;
 }
 
