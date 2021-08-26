@@ -8,6 +8,8 @@
 
 #include "../dominios/Codigo.h"
 #include "../dominios/Tipo.h"
+#include "../dominios/Nome.h"
+#include "../dominios/Classificacao.h"
 
 using namespace std;
 
@@ -16,15 +18,19 @@ class Peca
 {
 private:
     Codigo identificador;
-    string nome;
+    Nome nome;
     Tipo tipo;
-    string classificacao;
+    Classificacao classificacao;
 
 public:
     void setCodigo(const Codigo &);
     Codigo getCodigo() const;
     void setTipo(const Tipo &);
     Tipo getTipo() const;
+    void setNome(const Nome &);
+    Nome getNome() const;
+    void setClassificacao(const Classificacao &);
+    Classificacao getClassificacao() const;
 };
 
 #endif //PECA_H

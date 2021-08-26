@@ -7,6 +7,8 @@
 #include <iostream>
 
 #include "../dominios/Codigo.h"
+#include "../dominios/Nome.h"
+#include "../dominios/Capacidade.h"
 
 using namespace std;
 
@@ -15,12 +17,16 @@ class Sala
 {
 private:
     Codigo identificador;
-    string nome;
-    string capacidade;
+    Nome nome;
+    Capacidade capacidade;
 
 public:
     void setCodigo(const Codigo &);
     Codigo getCodigo() const;
+    void setNome(const Nome &);
+    Nome getNome() const;
+    void setCapacidade(const Capacidade &);
+    Capacidade getCapacidade() const;
 };
 
 #endif //SALA_H

@@ -8,6 +8,7 @@
 
 #include "../dominios/Codigo.h"
 #include "../dominios/Data.h"
+#include "../dominios/Horario.h"
 
 using namespace std;
 
@@ -17,13 +18,15 @@ class Sessao
 private:
     Codigo identificador;
     Data data;
-    string horario;
+    Horario horario;
 
 public:
     void setCodigo(const Codigo &);
     Codigo getCodigo() const;
     void setData(const Data &);
     Data getData() const;
+    void setHorario(const Horario &);
+    Horario getHorario() const;
 };
 
 #endif //SESSAO_H
