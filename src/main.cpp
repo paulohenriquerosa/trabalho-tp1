@@ -22,12 +22,18 @@
 
 int main()
 {
+    Telefone A;
 
-    cout << "OIIIIIIIIIIIIII" << endl;
-
-    TUTipo teste;
-
-    cout << teste.run() << endl;
+    try
+    {
+        A.setTelefone("(38)-000090090");
+    }
+    catch (...)
+    {
+        cout << "falhou" << endl;
+        return 0;
+    }
+    cout << "sucesso" << endl;
 
     return 0;
 }
