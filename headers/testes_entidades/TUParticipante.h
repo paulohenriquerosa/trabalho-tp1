@@ -18,6 +18,7 @@ using namespace std;
 class TUParticipante
 {
 private:
+<<<<<<< HEAD
     const string MATRICULA_VALIDO = "Paulo Henrique";
     const string NOME_VALIDO = "Paulo Henrique";
     const string SOBRENOME_VALIDO = "Paulo Henrique";
@@ -25,6 +26,15 @@ private:
     const string TELEFONE_VALIDO = "Paulo Henrique";
     const string SENHA_VALIDO = "Paulo Henrique";
     const string CARGO_VALIDO = "Paulo Henrique";
+=======
+    const  string MATRICULA_VALIDO   = "12345";
+    const  string NOME_VALIDO   = "Paulo Henrique";
+    const  string SOBRENOME_VALIDO   = "Paulo Henrique";
+    const  string EMAIL_VALIDO   = "paulo@example.com";
+    const  string TELEFONE_VALIDO   = "(11)-123456789";
+    const  string SENHA_VALIDO   = "paulo@1810";
+    const  string CARGO_VALIDO   = "ator";
+>>>>>>> 5140d202bfa3c9abb18932b9b6000d147e367ac0
     Participante *participante;
     int estado;
     void setUp();

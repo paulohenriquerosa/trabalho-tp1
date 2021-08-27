@@ -42,7 +42,6 @@
 int main()
 {
     //Testes de classe dominio:
-
     TUCapacidade testeA;
     switch (testeA.run())
     {

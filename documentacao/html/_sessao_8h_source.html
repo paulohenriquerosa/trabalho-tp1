@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Trabalho 1 de TP1: Código-Fonte de Trabalho1/headers/Sessao.h</title>
+<title>Trabalho 01 de TP1: Código-Fonte de headers/entidades/Sessao.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Trabalho 1 de TP1<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Trabalho 01 de TP1<span id="projectnumber">&#160;1.0</span>
    </div>
   </td>
  </tr>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_c51e0fd81c60705c33b995014c08f477.html">Trabalho1</a></li><li class="navelem"><a class="el" href="dir_9ccdc24ef2e024438f61d9ee3b53d09f.html">headers</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li><li class="navelem"><a class="el" href="dir_3f54c253cba53e4ee729604bf23179d9.html">entidades</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -77,27 +77,39 @@ $(function() {
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_codigo_8h.html">Codigo.h</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_data_8h.html">Data.h</a>&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using namespace </span>std;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_sessao.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="class_sessao.html">Sessao</a></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_class" href="class_codigo.html">Codigo</a> *identificador;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_class" href="class_data.html">Data</a> *data;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">string</span> horario;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">// terminar de incluir outros dominios e metodos</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif </span><span class="comment">//SESSAO_H</span></div>
-<div class="ttc" id="a_codigo_8h_html"><div class="ttname"><a href="_codigo_8h.html">Codigo.h</a></div></div>
-<div class="ttc" id="a_data_8h_html"><div class="ttname"><a href="_data_8h.html">Data.h</a></div></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;../dominios/Codigo.h&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;../dominios/Data.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;../dominios/Horario.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_sessao.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="class_sessao.html">Sessao</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_class" href="class_codigo.html">Codigo</a> identificador;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_class" href="class_data.html">Data</a> data;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_class" href="class_horario.html">Horario</a> horario;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sessao.html#ab8a6d52c518ea25fd532be26f15c4aae">setCodigo</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_codigo.html">Codigo</a> &amp;);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="class_codigo.html">Codigo</a> <a class="code hl_function" href="class_sessao.html#a7cae60c71904d90cdc108c50eb0d2640">getCodigo</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sessao.html#a253bd05f567ee97f850a3d640700f22b">setData</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_data.html">Data</a> &amp;);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_class" href="class_data.html">Data</a> <a class="code hl_function" href="class_sessao.html#a4c5610b15bd62dffa05f7915140b9fad">getData</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sessao.html#a324fa2df34ecbcc1612ebb526950d0bd">setHorario</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_horario.html">Horario</a> &amp;);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_class" href="class_horario.html">Horario</a> <a class="code hl_function" href="class_sessao.html#a5f01a11ebe0fa17893bc8a7f63b4749f">getHorario</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif </span><span class="comment">//SESSAO_H</span></div>
 <div class="ttc" id="aclass_codigo_html"><div class="ttname"><a href="class_codigo.html">Codigo</a></div><div class="ttdoc">Classe responsável pela identificação das entidades através de uma string que contém letras e dígitos...</div><div class="ttdef"><b>Definition:</b> Codigo.h:19</div></div>
 <div class="ttc" id="aclass_data_html"><div class="ttname"><a href="class_data.html">Data</a></div><div class="ttdoc">Classe responsável por armazenar uma data no formato DD/MM/AAAA, em que DD são os dias,...</div><div class="ttdef"><b>Definition:</b> Data.h:18</div></div>
-<div class="ttc" id="aclass_sessao_html"><div class="ttname"><a href="class_sessao.html">Sessao</a></div><div class="ttdoc">Classe que caracteriza uma sessão do espetáculo.</div><div class="ttdef"><b>Definition:</b> Sessao.h:16</div></div>
+<div class="ttc" id="aclass_horario_html"><div class="ttname"><a href="class_horario.html">Horario</a></div><div class="ttdoc">Classe responsável pelo horário da entidade Sessao.</div><div class="ttdef"><b>Definition:</b> Horario.h:16</div></div>
+<div class="ttc" id="aclass_sessao_html"><div class="ttname"><a href="class_sessao.html">Sessao</a></div><div class="ttdoc">Classe que caracteriza uma sessão do espetáculo.</div><div class="ttdef"><b>Definition:</b> Sessao.h:17</div></div>
+<div class="ttc" id="aclass_sessao_html_a253bd05f567ee97f850a3d640700f22b"><div class="ttname"><a href="class_sessao.html#a253bd05f567ee97f850a3d640700f22b">Sessao::setData</a></div><div class="ttdeci">void setData(const Data &amp;)</div><div class="ttdoc">Armazena a data da sessao em um objeto Data.</div><div class="ttdef"><b>Definition:</b> Sessao.cpp:19</div></div>
+<div class="ttc" id="aclass_sessao_html_a324fa2df34ecbcc1612ebb526950d0bd"><div class="ttname"><a href="class_sessao.html#a324fa2df34ecbcc1612ebb526950d0bd">Sessao::setHorario</a></div><div class="ttdeci">void setHorario(const Horario &amp;)</div><div class="ttdoc">Armazena o horario da sessao em um objeto Horario.</div><div class="ttdef"><b>Definition:</b> Sessao.cpp:33</div></div>
+<div class="ttc" id="aclass_sessao_html_a4c5610b15bd62dffa05f7915140b9fad"><div class="ttname"><a href="class_sessao.html#a4c5610b15bd62dffa05f7915140b9fad">Sessao::getData</a></div><div class="ttdeci">Data getData() const</div><div class="ttdoc">Retorna a data da sessao.</div><div class="ttdef"><b>Definition:</b> Sessao.cpp:26</div></div>
+<div class="ttc" id="aclass_sessao_html_a5f01a11ebe0fa17893bc8a7f63b4749f"><div class="ttname"><a href="class_sessao.html#a5f01a11ebe0fa17893bc8a7f63b4749f">Sessao::getHorario</a></div><div class="ttdeci">Horario getHorario() const</div><div class="ttdoc">Retorna a horario da sessao.</div><div class="ttdef"><b>Definition:</b> Sessao.cpp:40</div></div>
+<div class="ttc" id="aclass_sessao_html_a7cae60c71904d90cdc108c50eb0d2640"><div class="ttname"><a href="class_sessao.html#a7cae60c71904d90cdc108c50eb0d2640">Sessao::getCodigo</a></div><div class="ttdeci">Codigo getCodigo() const</div><div class="ttdoc">Retorna o identificador da sessao.</div><div class="ttdef"><b>Definition:</b> Sessao.cpp:12</div></div>
+<div class="ttc" id="aclass_sessao_html_ab8a6d52c518ea25fd532be26f15c4aae"><div class="ttname"><a href="class_sessao.html#ab8a6d52c518ea25fd532be26f15c4aae">Sessao::setCodigo</a></div><div class="ttdeci">void setCodigo(const Codigo &amp;)</div><div class="ttdoc">Armazena o identificador da sessao em um objeto Codigo.</div><div class="ttdef"><b>Definition:</b> Sessao.cpp:5</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

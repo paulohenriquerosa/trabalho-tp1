@@ -18,10 +18,10 @@ using namespace std;
 class TUPeca
 {
 private:
-    const string IDENTIFICADOR_VALIDO = "Paulo Henrique";
+    const string IDENTIFICADOR_VALIDO = "AB1234";
     const string NOME_VALIDO = "Paulo Henrique";
     const string TIPO_VALIDO = "auto";
-    const string CLASSIFICACAO_VALIDA = "auto";
+    const string CLASSIFICACAO_VALIDA = "livre";
     Peca *peca;
     int estado;
     void setUp();

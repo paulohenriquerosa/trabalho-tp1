@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Trabalho 1 de TP1: Referência da Classe TUCodigo</title>
+<title>Trabalho 01 de TP1: Referência da Classe TUCodigo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Trabalho 1 de TP1<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Trabalho 01 de TP1<span id="projectnumber">&#160;1.0</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Membros Públicos</h2></td></tr>
 <tr class="memitem:a4e6994bcde0011cdf0b0bb7a2c4d94d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_u_codigo.html#a4e6994bcde0011cdf0b0bb7a2c4d94d9">run</a> ()</td></tr>
-<tr class="memdesc:a4e6994bcde0011cdf0b0bb7a2c4d94d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executa o teste de unidade. Primeiro cria um objeto para o teste, depois, testa um cenário de sucesso, em seguida, teste um cenário de falha, e, por fim, deleta o objeto criado.  <a href="class_t_u_codigo.html#a4e6994bcde0011cdf0b0bb7a2c4d94d9">Mais...</a><br /></td></tr>
+<tr class="memdesc:a4e6994bcde0011cdf0b0bb7a2c4d94d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executa o teste de unidade. Primeiro cria um objeto para o teste, depois, testa um cenário de sucesso, em seguida, teste um cenário de falha, e, por fim, deleta o objeto criado, retornando se o teste causou alguma falha ou não.  <a href="class_t_u_codigo.html#a4e6994bcde0011cdf0b0bb7a2c4d94d9">Mais...</a><br /></td></tr>
 <tr class="separator:a4e6994bcde0011cdf0b0bb7a2c4d94d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
@@ -106,14 +106,15 @@ Atributos Estáticos Públicos</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Executa o teste de unidade. Primeiro cria um objeto para o teste, depois, testa um cenário de sucesso, em seguida, teste um cenário de falha, e, por fim, deleta o objeto criado. </p>
-<div class="fragment"><div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    setUp();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    testarCenarioSucesso();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    testarCenarioFalha();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    tearDown();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">return</span> estado;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+<p>Executa o teste de unidade. Primeiro cria um objeto para o teste, depois, testa um cenário de sucesso, em seguida, teste um cenário de falha, e, por fim, deleta o objeto criado, retornando se o teste causou alguma falha ou não. </p>
+<dl class="section return"><dt>Retorna</dt><dd>int estado </dd></dl>
+<div class="fragment"><div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    setUp();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    testarCenarioSucesso();</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    testarCenarioFalha();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    tearDown();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">return</span> estado;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -163,8 +164,8 @@ Atributos Estáticos Públicos</h2></td></tr>
 </div>
 </div>
 <hr/>A documentação para essa classe foi gerada a partir dos seguintes arquivos:<ul>
-<li>Trabalho1/headers/<a class="el" href="_t_u_codigo_8h_source.html">TUCodigo.h</a></li>
-<li>Trabalho1/src/<a class="el" href="_t_u_codigo_8cpp.html">TUCodigo.cpp</a></li>
+<li>headers/testes_dominios/<a class="el" href="_t_u_codigo_8h_source.html">TUCodigo.h</a></li>
+<li>src/testes_dominios/<a class="el" href="_t_u_codigo_8cpp.html">TUCodigo.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

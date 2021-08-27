@@ -21,24 +21,49 @@ void TUSala::tearDown()
 /// @return void
 void TUSala::testarCenarioSucesso()
 {
+    
+    try
+    {
+        Codigo identificador;
+        identificador.setCodigo(IDENTIFICADOR_VALIDO);
+        sala->setCodigo(identificador);
+        if (sala->getCodigo().getCodigo() != IDENTIFICADOR_VALIDO)
+            estado = FALHA;
 
-    Codigo identificador;
-    identificador.setCodigo(IDENTIFICADOR_VALIDO);
-    sala->setCodigo(identificador);
-    if (sala->getCodigo().getCodigo() != IDENTIFICADOR_VALIDO)
+    }
+    catch (invalid_argument &execao)
+    {
         estado = FALHA;
+    }
 
-    Nome nome;
-    nome.setNome(NOME_VALIDO);
-    sala->setNome(nome);
-    if (sala->getNome().getNome() != NOME_VALIDO)
-        estado = FALHA;
+    try
+    {
+        Nome nome;
+        nome.setNome(NOME_VALIDO);
+        sala->setNome(nome);
+        if (sala->getNome().getNome() != NOME_VALIDO)
+            estado = FALHA;
 
-    Capacidade capacidade;
-    capacidade.setCapacidade(CAPACIDADE_VALIDO);
-    sala->setCapacidade(capacidade);
-    if (sala->getCapacidade().getCapacidade() != CAPACIDADE_VALIDO)
+    }
+
+    catch (invalid_argument &execao)
+    {
         estado = FALHA;
+    }
+
+    try
+    {
+        Capacidade capacidade;
+        capacidade.setCapacidade(CAPACIDADE_VALIDO);
+        sala->setCapacidade(capacidade);
+        if (sala->getCapacidade().getCapacidade() != CAPACIDADE_VALIDO)
+            estado = FALHA;
+    }
+
+    catch (invalid_argument &execao)
+    {
+        estado = FALHA;
+    }
 }
 
 /// \brief Executa o teste de unidade. Primeiro cria um objeto para o teste,

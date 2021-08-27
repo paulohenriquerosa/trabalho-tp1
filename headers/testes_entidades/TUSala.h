@@ -18,9 +18,9 @@ using namespace std;
 class TUSala
 {
 private:
-    const string IDENTIFICADOR_VALIDO = "";
-    const string NOME_VALIDO = "";
-    const static int CAPACIDADE_VALIDO = 500;
+    const string IDENTIFICADOR_VALIDO = "AB1234";
+    const string NOME_VALIDO = "Sala1";
+    const static int CAPACIDADE_VALIDO = 400;
     Sala *sala;
     int estado;
     void setUp();
