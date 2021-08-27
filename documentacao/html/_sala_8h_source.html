@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Trabalho 1 de TP1: Código-Fonte de Trabalho1/headers/Sala.h</title>
+<title>Trabalho 01 de TP1: Código-Fonte de headers/entidades/Sala.h</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Trabalho 1 de TP1<span id="projectnumber">&#160;1.0</span>
+   <div id="projectname">Trabalho 01 de TP1<span id="projectnumber">&#160;1.0</span>
    </div>
   </td>
  </tr>
@@ -62,7 +62,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_c51e0fd81c60705c33b995014c08f477.html">Trabalho1</a></li><li class="navelem"><a class="el" href="dir_9ccdc24ef2e024438f61d9ee3b53d09f.html">headers</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li><li class="navelem"><a class="el" href="dir_3f54c253cba53e4ee729604bf23179d9.html">entidades</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -77,24 +77,39 @@ $(function() {
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_codigo_8h.html">Codigo.h</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;../dominios/Codigo.h&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;../dominios/Nome.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;../dominios/Capacidade.h&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_sala.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="class_sala.html">Sala</a></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_class" href="class_codigo.html">Codigo</a> *idenditicador;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">string</span> nome;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">string</span> capacidade;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">// terminar de incluir outros dominios e metodos</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>};</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#endif </span><span class="comment">//SALA_H</span></div>
-<div class="ttc" id="a_codigo_8h_html"><div class="ttname"><a href="_codigo_8h.html">Codigo.h</a></div></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using namespace </span>std;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_sala.html">   16</a></span><span class="keyword">class </span><a class="code hl_class" href="class_sala.html">Sala</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_class" href="class_codigo.html">Codigo</a> identificador;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_class" href="class_nome.html">Nome</a> nome;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_class" href="class_capacidade.html">Capacidade</a> capacidade;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sala.html#a36b842a0563d8273c3752a92170e7bb3">setCodigo</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_codigo.html">Codigo</a> &amp;);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="class_codigo.html">Codigo</a> <a class="code hl_function" href="class_sala.html#a5fc04838adf2b1ced0434b2185353da7">getCodigo</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sala.html#a9e159f8f7692f759ed4e24a93c68d09d">setNome</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_nome.html">Nome</a> &amp;);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_class" href="class_nome.html">Nome</a> <a class="code hl_function" href="class_sala.html#ab061cf9c867218e4084c88c178d5d07b">getNome</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_sala.html#ab7790b1c2e400e182de11170d86bbf3d">setCapacidade</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_capacidade.html">Capacidade</a> &amp;);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_class" href="class_capacidade.html">Capacidade</a> <a class="code hl_function" href="class_sala.html#a634f3533cf06d9beea005dd7f25ffc5e">getCapacidade</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif </span><span class="comment">//SALA_H</span></div>
+<div class="ttc" id="aclass_capacidade_html"><div class="ttname"><a href="class_capacidade.html">Capacidade</a></div><div class="ttdoc">Classe que indica a capacidade.</div><div class="ttdef"><b>Definition:</b> Capacidade.h:18</div></div>
 <div class="ttc" id="aclass_codigo_html"><div class="ttname"><a href="class_codigo.html">Codigo</a></div><div class="ttdoc">Classe responsável pela identificação das entidades através de uma string que contém letras e dígitos...</div><div class="ttdef"><b>Definition:</b> Codigo.h:19</div></div>
-<div class="ttc" id="aclass_sala_html"><div class="ttname"><a href="class_sala.html">Sala</a></div><div class="ttdoc">Classe relativa às salas de espetáculos.</div><div class="ttdef"><b>Definition:</b> Sala.h:15</div></div>
+<div class="ttc" id="aclass_nome_html"><div class="ttname"><a href="class_nome.html">Nome</a></div><div class="ttdoc">Classe que indica o tipo da peça a ser apresentada.</div><div class="ttdef"><b>Definition:</b> Nome.h:17</div></div>
+<div class="ttc" id="aclass_sala_html"><div class="ttname"><a href="class_sala.html">Sala</a></div><div class="ttdoc">Classe relativa às salas de espetáculos.</div><div class="ttdef"><b>Definition:</b> Sala.h:17</div></div>
+<div class="ttc" id="aclass_sala_html_a36b842a0563d8273c3752a92170e7bb3"><div class="ttname"><a href="class_sala.html#a36b842a0563d8273c3752a92170e7bb3">Sala::setCodigo</a></div><div class="ttdeci">void setCodigo(const Codigo &amp;)</div><div class="ttdoc">Armazena o identificador da sala do espetáculo em um objeto da classe Codigo.</div><div class="ttdef"><b>Definition:</b> Sala.cpp:6</div></div>
+<div class="ttc" id="aclass_sala_html_a5fc04838adf2b1ced0434b2185353da7"><div class="ttname"><a href="class_sala.html#a5fc04838adf2b1ced0434b2185353da7">Sala::getCodigo</a></div><div class="ttdeci">Codigo getCodigo() const</div><div class="ttdoc">Retorna o identificador da sala armazenado num objeto da classe Codigo.</div><div class="ttdef"><b>Definition:</b> Sala.cpp:13</div></div>
+<div class="ttc" id="aclass_sala_html_a634f3533cf06d9beea005dd7f25ffc5e"><div class="ttname"><a href="class_sala.html#a634f3533cf06d9beea005dd7f25ffc5e">Sala::getCapacidade</a></div><div class="ttdeci">Capacidade getCapacidade() const</div><div class="ttdoc">Retorna o capacidade da sala armazenado num objeto da classe Capacidade.</div><div class="ttdef"><b>Definition:</b> Sala.cpp:43</div></div>
+<div class="ttc" id="aclass_sala_html_a9e159f8f7692f759ed4e24a93c68d09d"><div class="ttname"><a href="class_sala.html#a9e159f8f7692f759ed4e24a93c68d09d">Sala::setNome</a></div><div class="ttdeci">void setNome(const Nome &amp;)</div><div class="ttdoc">Armazena o nome da sala do espetáculo em um objeto da classe Nome.</div><div class="ttdef"><b>Definition:</b> Sala.cpp:21</div></div>
+<div class="ttc" id="aclass_sala_html_ab061cf9c867218e4084c88c178d5d07b"><div class="ttname"><a href="class_sala.html#ab061cf9c867218e4084c88c178d5d07b">Sala::getNome</a></div><div class="ttdeci">Nome getNome() const</div><div class="ttdoc">Retorna o nome da sala armazenado num objeto da classe Nome.</div><div class="ttdef"><b>Definition:</b> Sala.cpp:28</div></div>
+<div class="ttc" id="aclass_sala_html_ab7790b1c2e400e182de11170d86bbf3d"><div class="ttname"><a href="class_sala.html#ab7790b1c2e400e182de11170d86bbf3d">Sala::setCapacidade</a></div><div class="ttdeci">void setCapacidade(const Capacidade &amp;)</div><div class="ttdoc">Armazena a capacidade da sala do espetáculo em um objeto da classe Capacidade.</div><div class="ttdef"><b>Definition:</b> Sala.cpp:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

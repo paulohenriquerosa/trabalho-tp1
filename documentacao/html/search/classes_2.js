@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['matricula_0',['Matricula',['../class_matricula.html',1,'']]]
+  ['email_0',['Email',['../class_email.html',1,'']]]
 ];
