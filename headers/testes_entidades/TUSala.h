@@ -15,19 +15,21 @@
 using namespace std;
 
 /// \brief Classe de teste de unidade da entidade Sala
-class TUSala {
+class TUSala
+{
 private:
-    const string IDENTIFICADOR_VALIDO   = "";
-    const string NOME_VALIDO   = "";
-    const static int CAPACIDADE_VALIDO   = 500;
+    const string IDENTIFICADOR_VALIDO = "";
+    const string NOME_VALIDO = "";
+    const static int CAPACIDADE_VALIDO = 500;
     Sala *sala;
     int estado;
     void setUp();
     void tearDown();
-    void testarCenarioSucesso();          
+    void testarCenarioSucesso();
+
 public:
-    const static int SUCESSO =  0;
-    const static int FALHA   = -1;    
+    const static int SUCESSO = 0;
+    const static int FALHA = -1;
     int run();
 };
 

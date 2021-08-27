@@ -15,19 +15,21 @@
 using namespace std;
 
 /// \brief Classe de teste de unidade da entidade Sessao
-class TUSessao {
+class TUSessao
+{
 private:
-    const string IDENTIFICADOR_VALIDO   = "";
-    const string DATA_VALIDO   = "";
-    const string HORARIO_VALIDO   = "";
+    const string IDENTIFICADOR_VALIDO = "";
+    const string DATA_VALIDA = "";
+    const string HORARIO_VALIDO = "";
     Sessao *sessao;
     int estado;
     void setUp();
     void tearDown();
-    void testarCenarioSucesso();          
+    void testarCenarioSucesso();
+
 public:
-    const static int SUCESSO =  0;
-    const static int FALHA   = -1;    
+    const static int SUCESSO = 0;
+    const static int FALHA = -1;
     int run();
 };
 
