@@ -71,7 +71,7 @@ void Email::validar(string email){
   for (auto i: email ){
     string s;
     s = i;
-    if(find(caracteres_permitidos.begin(), caracteres_permitidos.end(), s) == caracteres_permitidos.end()){
+    if(find(caracteres_permitidos.begin(), caracteres_permitidos.end(), s) != caracteres_permitidos.end()){
       throw invalid_argument("Argumento invalido");
     };
   }
@@ -83,5 +83,6 @@ void Email::validar(string email){
 /// @param string email
 void Email::setEmal(string email){
   validar(email);
+
   this->email = email;
 }

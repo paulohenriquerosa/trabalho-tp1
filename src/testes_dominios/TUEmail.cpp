@@ -21,6 +21,7 @@ void TUEmail::testarCenarioSucesso()
         if (email->getEmail() != EMAIL_VALIDO)
         {
             estado = FALHA;
+            
         }
     }
     catch (invalid_argument &excecao)

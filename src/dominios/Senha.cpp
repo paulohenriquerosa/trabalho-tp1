@@ -3,6 +3,7 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
+#include <algorithm>
 
 #include "../../headers/dominios/Senha.h"
 
@@ -24,27 +25,30 @@ void Senha::validar(string senha) {
     "?",
   };
 
+  if (not (std::count_if(senha.begin(), senha.end(), [](unsigned char ch) { return isalpha(ch); }) != 1)) {
+    
+    throw invalid_argument("Argumento invalido");
+  };
+
+  if (not (std::count_if(senha.begin(), senha.end(), [](unsigned char ch) { return isdigit(ch); }) != 1)) {
+    
+    throw invalid_argument("Argumento invalido");
+  };
+
   for (auto i : senha ){
     string s;
     s = i;
-    if(find(caracteres_permitidos.begin(), caracteres_permitidos.end(), s) == caracteres_permitidos.end()){
-      throw invalid_argument("Argumento invalido");
-    }
-
-    int repets = std::count(senha.begin(), senha.end(), i);
+    int repets = count(senha.begin(), senha.end(), i);
 
     if (repets > 1){
       throw invalid_argument("Argumento invalido");
     };
 
-  };
-
-  if (not (std::count_if(senha.begin(), senha.end(), [](unsigned char ch) { return std::isalpha(ch); }) == 1)) {
-    throw invalid_argument("Argumento invalido");
-  };
-
-  if (not (std::count_if(senha.begin(), senha.end(), [](unsigned char ch) { return std::isdigit(ch); }) == 1)) {
-    throw invalid_argument("Argumento invalido");
+    if (not isalpha(i) and not isdigit(i)){
+      if(find(caracteres_permitidos.begin(), caracteres_permitidos.end(), s) == caracteres_permitidos.end()){
+        throw invalid_argument("Argumento invalido");
+      }
+    }
   };
 
 };

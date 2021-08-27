@@ -19,7 +19,7 @@ class TUSenha
 {
 private:
     const string SENHA_VALIDA = "paulo@1810";
-    const string SENHA_INVALIDA = "PauloPaulo";
+    const string SENHA_INVALIDA = "Paul";
     Senha *senha;
     int estado;
     void setUp();
