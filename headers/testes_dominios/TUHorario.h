@@ -14,7 +14,7 @@
 
 using namespace std;
 
-/// \brief Classe de teste de unidade de Horario
+/// \brief Classe de teste de unidade de Horario.
 class TUHorario
 {
 private:

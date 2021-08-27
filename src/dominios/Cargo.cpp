@@ -3,9 +3,8 @@
 #include "../../headers/dominios/Cargo.h"
 
 /*** 
- * A validação do tipo se dá pela verificação se o tipo da peça é
- * auto, comédia, drama, farsa, melodrama, monólogo, musical, ópera,
- * ou revista. Sendo uma verificação sensível a letras e acentos. 
+ * A validação se dá pela verificação se o cargo do participante é ator, 
+ * cenógrafo, figurinista, maquiador, sonoplasta ou iluminador.  
  * ***/
 void Cargo::validar(string cargo)
 {
@@ -16,7 +15,7 @@ void Cargo::validar(string cargo)
   }
 }
 
-/// \brief Armazena o tipo da peça recebido no atributo do objeto da classe Tipo
+/// \brief Armazena o cargo do participante recebido no atributo do objeto da classe Cargo.
 /// @param string cargo
 void Cargo::setCargo(string cargo)
 {
@@ -24,7 +23,7 @@ void Cargo::setCargo(string cargo)
   this->cargo = cargo;
 }
 
-/// \brief Retorna o cargo da peça armazenada no objeto da classe cargo
+/// \brief Retorna o cargo do participante armazenado no objeto da classe Cargo.
 /// @return string cargo
 string Cargo::getCargo() const
 {

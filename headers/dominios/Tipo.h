@@ -12,7 +12,7 @@
 
 using namespace std;
 
-/// \brief Classe que indica o tipo da peça a ser apresentada
+/// \brief Classe que indica o tipo da peça a ser apresentada.
 class Tipo
 {
 private:

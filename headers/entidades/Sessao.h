@@ -1,3 +1,5 @@
+/// @author: Maria Claudia Campos Martins 17/0109968
+
 #ifndef SESSAO_H
 #define SESSAO_H
 

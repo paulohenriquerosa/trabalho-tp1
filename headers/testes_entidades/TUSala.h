@@ -14,7 +14,7 @@
 
 using namespace std;
 
-/// \brief Classe de teste de unidade da entidade Sala
+/// \brief Classe de teste de unidade da entidade Sala.
 class TUSala
 {
 private:

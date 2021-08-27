@@ -14,24 +14,26 @@
 
 using namespace std;
 
-/// \brief Classe de teste de unidade da entidade Pariticipante
-class TUParticipante {
+/// \brief Classe de teste de unidade da entidade Participante.
+class TUParticipante
+{
 private:
-    const  string MATRICULA_VALIDO   = "Paulo Henrique";
-    const  string NOME_VALIDO   = "Paulo Henrique";
-    const  string SOBRENOME_VALIDO   = "Paulo Henrique";
-    const  string EMAIL_VALIDO   = "Paulo Henrique";
-    const  string TELEFONE_VALIDO   = "Paulo Henrique";
-    const  string SENHA_VALIDO   = "Paulo Henrique";
-    const  string CARGO_VALIDO   = "Paulo Henrique";
+    const string MATRICULA_VALIDO = "Paulo Henrique";
+    const string NOME_VALIDO = "Paulo Henrique";
+    const string SOBRENOME_VALIDO = "Paulo Henrique";
+    const string EMAIL_VALIDO = "Paulo Henrique";
+    const string TELEFONE_VALIDO = "Paulo Henrique";
+    const string SENHA_VALIDO = "Paulo Henrique";
+    const string CARGO_VALIDO = "Paulo Henrique";
     Participante *participante;
     int estado;
     void setUp();
     void tearDown();
-    void testarCenarioSucesso();          
+    void testarCenarioSucesso();
+
 public:
-    const static int SUCESSO =  0;
-    const static int FALHA   = -1;    
+    const static int SUCESSO = 0;
+    const static int FALHA = -1;
     int run();
 };
 

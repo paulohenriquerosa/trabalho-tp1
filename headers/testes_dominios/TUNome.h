@@ -14,7 +14,7 @@
 
 using namespace std;
 
-/// \brief Classe de teste de unidade de Nome
+/// \brief Classe de teste de unidade de Nome.
 class TUNome
 {
 private:

@@ -13,7 +13,7 @@
 
 using namespace std;
 
-/// \brief Classe de teste de unidade de Cargo
+/// \brief Classe de teste de unidade de Cargo.
 class TUCargo
 {
 private:

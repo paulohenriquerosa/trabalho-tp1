@@ -14,7 +14,7 @@
 
 using namespace std;
 
-/// \brief Classe de teste de unidade de Capacidade
+/// \brief Classe de teste de unidade de Capacidade.
 
 class TUCapacidade
 {

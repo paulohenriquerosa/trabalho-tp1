@@ -1,8 +1,8 @@
-/// @author: Bianca GLycia Boueri 17/0161561
+/// @author: Bianca Glycia Boueri 17/0161561
 
 #include "../../headers/testes_entidades/TUSessao.h"
 
-/// \brief Inicializa a instância e variável ao inciar o teste
+/// \brief Inicializa a instância e variável ao iniciar o teste
 /// @return void
 void TUSessao::setUp()
 {
@@ -10,7 +10,7 @@ void TUSessao::setUp()
   estado = SUCESSO;
 }
 
-/// \brief Deleta instância criado após o final do teste
+/// \brief Deleta instância criada após o final do teste
 /// @return void
 void TUSessao::tearDown()
 {
@@ -41,8 +41,8 @@ void TUSessao::testarCenarioSucesso()
 }
 
 /// \brief Executa o teste de unidade. Primeiro cria um objeto para o teste,
-/// depois, testa um cenário de sucesso, em seguida, teste um cenário de falha, e,
-/// por fim, deleta o objeto criado, retornando se o teste causou alguma falha ou não.
+/// depois, testa um cenário de sucesso, e, por fim, deleta o objeto criado,
+/// retornando se o teste causou alguma falha ou não.
 /// @return int estado
 int TUSessao::run()
 {

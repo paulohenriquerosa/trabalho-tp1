@@ -12,7 +12,7 @@
 
 using namespace std;
 
-/// \brief Classe que indica a capacidade
+/// \brief Classe que indica a capacidade da entidade Sala.
 
 class Capacidade
 {

@@ -14,7 +14,7 @@
 
 using namespace std;
 
-/// \brief Classe de teste de unidade de Classificacao
+/// \brief Classe de teste de unidade de Classificacao.
 class TUClassificacao
 {
 private:

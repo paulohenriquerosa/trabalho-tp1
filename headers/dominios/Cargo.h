@@ -1,4 +1,4 @@
-/// @author: Bianca GLycia Boueri 17/0161561
+/// @author: Bianca Glycia Boueri 17/0161561
 
 #ifndef CARGO_H
 #define CARGO_H
@@ -12,7 +12,7 @@
 
 using namespace std;
 
-/// \brief Classe que indica o tipo da peça a ser apresentada
+/// \brief Classe que indica o cargo ocupado pela entidade Participante.
 class Cargo
 {
 private:

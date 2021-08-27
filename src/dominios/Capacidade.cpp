@@ -3,9 +3,8 @@
 #include "../../headers/dominios/Capacidade.h"
 
 /*** 
- * A validação do tipo se dá pela verificação se o tipo da peça é
- * auto, comédia, drama, farsa, melodrama, monólogo, musical, ópera,
- * ou revista. Sendo uma verificação sensível a letras e acentos. 
+ * A validação se dá pela verificação se a capacidade da sala é 100, 200, 
+ * 300, 400 ou 500 pessoas.
  * ***/
 void Capacidade::validar(int capacidade)
 {
@@ -15,8 +14,9 @@ void Capacidade::validar(int capacidade)
     throw invalid_argument("Capacidade invalida");
   }
 }
-/// \brief Armazena o tipo da peça recebido no atributo do objeto da classe Tipo
-/// @param int tipo
+/// \brief Armazena a capacidade da sala recebida no atributo do objeto da
+///classe Capacidade.
+/// @param int capacidade
 
 void Capacidade::setCapacidade(int capacidade)
 {
@@ -24,8 +24,8 @@ void Capacidade::setCapacidade(int capacidade)
   this->capacidade = capacidade;
 }
 
-/// \brief Retorna o tipo da peça armazenada no objeto da classe Tipo
-/// @return string tipo
+/// \brief Retorna a capacidade da sala armazenada no objeto da classe Capacidade.
+/// @return int capacidade
 
 int Capacidade::getCapacidade() const
 {

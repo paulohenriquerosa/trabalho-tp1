@@ -3,9 +3,9 @@
 #include "../../headers/dominios/Telefone.h"
 
 /*** 
- * A validação do tipo se dá pela verificação se o tipo da peça é
- * auto, comédia, drama, farsa, melodrama, monólogo, musical, ópera,
- * ou revista. Sendo uma verificação sensível a letras e acentos. 
+ * A validação se dá pela verificação se o telefone atende ao formato adequado, 
+ * se o ddd corresponde a um dos códigos aceitos, se cada digito é um numero e 
+ * se não é "000000000".
  * ***/
 void Telefone::validar(string telefone)
 {
@@ -46,16 +46,16 @@ void Telefone::validar(string telefone)
   }
 }
 
-/// \brief Armazena o tipo da peça recebido no atributo do objeto da classe Tipo
-/// @param string tipo
+/// \brief Armazena o telefone do Participante recebido no atributo do objeto da classe Telefone.
+/// @param string telefone
 void Telefone::setTelefone(string telefone)
 {
   validar(telefone);
   this->telefone = telefone;
 }
 
-/// \brief Retorna o tipo da peça armazenada no objeto da classe Tipo
-/// @return string tipo
+/// \brief Retorna o telefone do Participante armazenado no objeto da classe Telefone.
+/// @return string Telefone
 string Telefone::getTelefone() const
 {
   return telefone;

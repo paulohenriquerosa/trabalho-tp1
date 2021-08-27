@@ -12,22 +12,23 @@
 
 using namespace std;
 
-/// \brief Classe responsável pela classificação da entidade Peça
+/// \brief Classe responsável pela classificação da entidade Peça.
 
-class Classificacao {
-  private:
-    string classificacao;
-    void validar(string);
+class Classificacao
+{
+private:
+  string classificacao;
+  void validar(string);
 
-  public: 
-    string getClassificacao() const;
-    void setClassificacao(string);
+public:
+  string getClassificacao() const;
+  void setClassificacao(string);
 };
-
 
 /// \brief Retorna a classificação da peça armazenada no objeto da classe Classificacao
 /// @return string classificacao
-inline string Classificacao::getClassificacao() const {
+inline string Classificacao::getClassificacao() const
+{
   return classificacao;
 };
 

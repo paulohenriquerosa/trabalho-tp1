@@ -14,7 +14,7 @@
 
 using namespace std;
 
-/// \brief Classe de teste de unidade de Senha
+/// \brief Classe de teste de unidade de Senha.
 class TUSenha
 {
 private:

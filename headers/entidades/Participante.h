@@ -1,3 +1,5 @@
+/// @author: Maria Claudia Campos Martins 17/0109968
+
 #ifndef PARTICIPANTE_H
 #define PARTICIPANTE_H
 

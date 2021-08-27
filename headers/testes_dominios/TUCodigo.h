@@ -14,7 +14,7 @@
 
 using namespace std;
 
-/// \brief Classe de teste de unidade de Codigo
+/// \brief Classe de teste de unidade de Codigo.
 class TUCodigo
 {
 private:

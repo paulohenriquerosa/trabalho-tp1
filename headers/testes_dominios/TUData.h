@@ -14,7 +14,7 @@
 
 using namespace std;
 
-/// \brief Classe de teste de unidade de Data
+/// \brief Classe de teste de unidade de Data.
 class TUData
 {
 private:

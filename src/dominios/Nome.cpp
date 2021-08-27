@@ -3,9 +3,10 @@
 #include "../../headers/dominios/Nome.h"
 
 /*** 
- * A validação do tipo se dá pela verificação se o tipo da peça é
- * auto, comédia, drama, farsa, melodrama, monólogo, musical, ópera,
- * ou revista. Sendo uma verificação sensível a letras e acentos. 
+ * A validação se dá pela verificação se o nome possui de 5 a 20 caracteres, 
+ * se cada caractere é uma letra, ponto ou espaco em branco, se todo ponto é 
+ * precedido por letra, se nao ha espaços em branco em sequencia e se a primeira 
+ * letra de cada termo é maiuscula.
  * ***/
 void Nome::validar(string nome)
 {
@@ -51,16 +52,17 @@ void Nome::validar(string nome)
   }
 }
 
-/// \brief Armazena o tipo da peça recebido no atributo do objeto da classe Tipo
-/// @param string tipo
+/// \brief Armazena o nome do Participante, da Peca e da Sala recebidos nos
+///atributos dos objetos da classe Nome.
+/// @param string nome
 void Nome::setNome(string nome)
 {
   validar(nome);
   this->nome = nome;
 }
 
-/// \brief Retorna o tipo da peça armazenada no objeto da classe Tipo
-/// @return string tipo
+/// \brief Retorna os nomes das entidades armazenados nos objetos da classe Nome.
+/// @return string nome
 string Nome::getNome() const
 {
   return nome;

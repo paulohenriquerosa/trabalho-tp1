@@ -14,7 +14,7 @@
 
 using namespace std;
 
-/// \brief Classe de teste de unidade de Tipo
+/// \brief Classe de teste de unidade de Telefone.
 class TUTelefone
 {
 private:

@@ -23,7 +23,7 @@ void TUEmail::testarCenarioSucesso()
             estado = FALHA;
         }
     }
-    catch (invalid_argument &execao)
+    catch (invalid_argument &excecao)
     {
         estado = FALHA;
     }
