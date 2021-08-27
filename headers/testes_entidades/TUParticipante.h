@@ -17,13 +17,13 @@ using namespace std;
 /// \brief Classe de teste de unidade da entidade Pariticipante
 class TUParticipante {
 private:
-    const  string MATRICULA_VALIDO   = "Paulo Henrique";
+    const  string MATRICULA_VALIDO   = "12345";
     const  string NOME_VALIDO   = "Paulo Henrique";
     const  string SOBRENOME_VALIDO   = "Paulo Henrique";
-    const  string EMAIL_VALIDO   = "Paulo Henrique";
-    const  string TELEFONE_VALIDO   = "Paulo Henrique";
-    const  string SENHA_VALIDO   = "Paulo Henrique";
-    const  string CARGO_VALIDO   = "Paulo Henrique";
+    const  string EMAIL_VALIDO   = "paulo@example.com";
+    const  string TELEFONE_VALIDO   = "(11)-123456789";
+    const  string SENHA_VALIDO   = "paulo@1810";
+    const  string CARGO_VALIDO   = "ator";
     Participante *participante;
     int estado;
     void setUp();

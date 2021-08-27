@@ -18,9 +18,9 @@ using namespace std;
 class TUSessao
 {
 private:
-    const string IDENTIFICADOR_VALIDO = "";
-    const string DATA_VALIDA = "";
-    const string HORARIO_VALIDO = "";
+    const string IDENTIFICADOR_VALIDO = "AB1234";
+    const string DATA_VALIDA = "17/12/2017";
+    const string HORARIO_VALIDO = "14:30";
     Sessao *sessao;
     int estado;
     void setUp();

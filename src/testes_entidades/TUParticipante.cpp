@@ -18,47 +18,102 @@ void TUParticipante::tearDown(){
 /// \brief Testa os cenário de sucesso dos atributos
 /// @return void
 void TUParticipante::testarCenarioSucesso(){
-    Matricula matricula;
-    matricula.setMatricula(MATRICULA_VALIDO);
-    participante->setMatricula(matricula);
-    if(participante->getMatricula().getMatricula() != MATRICULA_VALIDO)
+    try
+    {
+    
+        Matricula matricula;
+        matricula.setMatricula(MATRICULA_VALIDO);
+        participante->setMatricula(matricula);
+        if(participante->getMatricula().getMatricula() != MATRICULA_VALIDO)
+            estado = FALHA;
+    }
+    catch (invalid_argument &execao)
+    {
         estado = FALHA;
+    }
 
-    Nome nome;
-    nome.setNome(NOME_VALIDO);
-    participante->setNome(nome);
-    if(participante->getNome().getNome() != NOME_VALIDO)
-        estado = FALHA;
+    try
+    {
+        Nome nome;
+        nome.setNome(NOME_VALIDO);
+        participante->setNome(nome);
+        if(participante->getNome().getNome() != NOME_VALIDO)
+            estado = FALHA;
 
-    Nome sobrenome;
-    sobrenome.setNome(SOBRENOME_VALIDO);
-    participante->setSobrenome(sobrenome);
-    if(participante->getSobrenome().getNome() != SOBRENOME_VALIDO)
+    }
+    catch (invalid_argument &execao)
+    {
         estado = FALHA;
+    }
 
-    Email email;
-    email.setEmal(EMAIL_VALIDO);
-    participante->setEmail(email);
-    if(participante->getEmail().getEmail() != EMAIL_VALIDO)
-        estado = FALHA;
+    try
+    {
+        Nome sobrenome;
+        sobrenome.setNome(SOBRENOME_VALIDO);
+        participante->setSobrenome(sobrenome);
+        if(participante->getSobrenome().getNome() != SOBRENOME_VALIDO)
+            estado = FALHA;
 
-    Telefone telefone;
-    telefone.setTelefone(TELEFONE_VALIDO);
-    participante->setTelefone(telefone);
-    if(participante->getTelefone().getTelefone() != TELEFONE_VALIDO)
+    }
+    catch (invalid_argument &execao)
+    {
         estado = FALHA;
+    }
 
-    Senha senha;
-    senha.setSenha(SENHA_VALIDO);
-    participante->setSenha(senha);
-    if(participante->getSenha().getSenha() != SENHA_VALIDO)
+    try
+    {
+        Email email;
+        email.setEmal(EMAIL_VALIDO);
+        participante->setEmail(email);
+        if(participante->getEmail().getEmail() != EMAIL_VALIDO)
+            estado = FALHA;
+
+    }
+    catch (invalid_argument &execao)
+    {
         estado = FALHA;
-        
-    Cargo cargo;
-    cargo.setCargo(CARGO_VALIDO);
-    participante->setCargo(cargo);
-    if(participante->getCargo().getCargo() != CARGO_VALIDO)
+    }
+
+    try
+    {
+        Telefone telefone;
+        telefone.setTelefone(TELEFONE_VALIDO);
+        participante->setTelefone(telefone);
+        if(participante->getTelefone().getTelefone() != TELEFONE_VALIDO)
+            estado = FALHA;
+
+    }
+    catch (invalid_argument &execao)
+    {
         estado = FALHA;
+    }
+
+    try
+    {
+        Senha senha;
+        senha.setSenha(SENHA_VALIDO);
+        participante->setSenha(senha);
+        if(participante->getSenha().getSenha() != SENHA_VALIDO)
+            estado = FALHA;
+
+    }
+    catch (invalid_argument &execao)
+    {
+        estado = FALHA;
+    }
+
+    try
+    {
+        Cargo cargo;
+        cargo.setCargo(CARGO_VALIDO);
+        participante->setCargo(cargo);
+        if(participante->getCargo().getCargo() != CARGO_VALIDO)
+            estado = FALHA;
+    }
+    catch (invalid_argument &execao)
+    {
+        estado = FALHA;
+    }
 }
 
 /// \brief Executa o teste de unidade. Primeiro cria um objeto para o teste,
