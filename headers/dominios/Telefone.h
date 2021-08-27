@@ -12,7 +12,7 @@
 
 using namespace std;
 
-/// \brief Classe que indica o tipo da peça a ser apresentada
+/// \brief Classe responsável pelo telefone da entidade Participante.
 class Telefone
 {
 private:

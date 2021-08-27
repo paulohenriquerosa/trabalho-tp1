@@ -12,24 +12,24 @@
 
 using namespace std;
 
-/// \brief Classe responsável pela email da entidade Participante
+/// \brief Classe responsável pelo email da entidade Participante.
 
+class Email
+{
+private:
+  string email;
+  void validar(string);
 
-class Email {
-  private:
-    string email;
-    void validar(string);
-
-  public:
+public:
   void setEmal(string);
   string getEmail() const;
-
 };
 
 /// \brief Retorna o email do usuário armazenada no objeto da classe Email
 /// @return string email
 
-inline string Email::getEmail() const {
+inline string Email::getEmail() const
+{
   return email;
 }
 

@@ -1,3 +1,5 @@
+/// @author: Maria Claudia Campos Martins 17/0109968
+
 #include "../../headers/entidades/Sala.h"
 
 /// \brief Armazena o identificador da sala do espetáculo em um objeto

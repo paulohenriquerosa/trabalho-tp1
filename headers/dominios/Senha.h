@@ -12,7 +12,7 @@
 
 using namespace std;
 
-/// \brief Classe responsável pela senha da entidade Participante
+/// \brief Classe responsável pela senha da entidade Participante.
 
 class Senha
 {

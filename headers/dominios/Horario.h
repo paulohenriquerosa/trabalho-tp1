@@ -12,21 +12,22 @@
 
 using namespace std;
 
-/// \brief Classe responsável pelo horário da entidade Sessao
-class Horario {
-  private:
-    string horario;
-    void validar(string);
+/// \brief Classe responsável pelo horário da entidade Sessao.
+class Horario
+{
+private:
+  string horario;
+  void validar(string);
 
-  public:
+public:
   void setHorario(string);
   string getHorario() const;
-
 };
 /// \brief Retorna o horario da peça armazenada no objeto da classe Horário
 /// @return string horario
 
-inline string Horario::getHorario() const {
+inline string Horario::getHorario() const
+{
   return horario;
 }
 

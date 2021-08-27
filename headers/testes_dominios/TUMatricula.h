@@ -14,7 +14,7 @@
 
 using namespace std;
 
-/// \brief Classe de teste de unidade de Matricula
+/// \brief Classe de teste de unidade de Matricula.
 class TUMatricula
 {
 private:

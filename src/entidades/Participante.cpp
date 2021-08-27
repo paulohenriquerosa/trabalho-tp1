@@ -1,3 +1,4 @@
+/// @author: Maria Claudia Campos Martins 17/0109968
 
 #include "../../headers/entidades/Participante.h"
 

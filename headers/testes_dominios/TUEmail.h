@@ -14,7 +14,7 @@
 
 using namespace std;
 
-/// \brief Classe de teste de unidade de Email
+/// \brief Classe de teste de unidade de Email.
 class TUEmail
 {
 private:

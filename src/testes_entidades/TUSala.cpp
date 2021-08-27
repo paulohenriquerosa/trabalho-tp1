@@ -2,7 +2,7 @@
 
 #include "../../headers/testes_entidades/TUSala.h"
 
-/// \brief Inicializa a instância e variável ao inciar o teste
+/// \brief Inicializa a instância e variável ao iniciar o teste
 /// @return void
 void TUSala::setUp()
 {
@@ -10,7 +10,7 @@ void TUSala::setUp()
     estado = SUCESSO;
 }
 
-/// \brief Deleta instância criado após o final do teste
+/// \brief Deleta instância criada após o final do teste
 /// @return void
 void TUSala::tearDown()
 {
@@ -67,8 +67,8 @@ void TUSala::testarCenarioSucesso()
 }
 
 /// \brief Executa o teste de unidade. Primeiro cria um objeto para o teste,
-/// depois, testa um cenário de sucesso, em seguida, teste um cenário de falha, e,
-/// por fim, deleta o objeto criado, retornando se o teste causou alguma falha ou não.
+/// depois, testa um cenário de sucesso, e, por fim, deleta o objeto criado,
+/// retornando se o teste causou alguma falha ou não.
 /// @return int estado
 int TUSala::run()
 {
