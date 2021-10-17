@@ -30,7 +30,7 @@ class IServicoSessao;
 //////////// Interfaces camada apresentação
 
 class IApresentacaoAutenticacao
-{ //IAC-AA
+{ // IAC-AA
 
 public:
   virtual bool autenticar(Matricula *) = 0;
@@ -52,7 +52,7 @@ class IApresentacaoPeca
 { // IAC-APE
 
 public:
-  virtual void executar(Matricula *) = 0; //Usuário logado
+  virtual void executar(Matricula *) = 0; // Usuário logado
   virtual void executar() = 0;            // Opções de listagem, usuário não logado
   virtual void setCntrServicoPeca(IServicoPeca *) = 0;
   virtual ~IApresentacaoPeca() {}
@@ -62,7 +62,7 @@ class IApresentacaoSala
 { // IAC-ASA
 
 public:
-  virtual void executar(Matricula *) = 0; //Usuário logado
+  virtual void executar(Matricula *) = 0; // Usuário logado
   virtual void executar() = 0;            // Opções de listagem, usuário não logado
   virtual void setCntrServicoSala(IServicoSala *) = 0;
   virtual ~IApresentacaoSala() {}
@@ -72,7 +72,7 @@ class IApresentacaoSessao
 { // IAC-ASE
 
 public:
-  virtual void executar(Matricula *) = 0; //Usuário logado
+  virtual void executar(Matricula *) = 0; // Usuário logado
   virtual void executar() = 0;            // Opções de listagem, usuário não logado
   virtual void setCntrServicoSessao(IServicoSessao *) = 0;
   virtual ~IApresentacaoSessao() {}
@@ -81,7 +81,7 @@ public:
 //////////// Interfaces camada de serviço
 
 class IServicoAutenticacao
-{ //IAA-SA
+{ // IAA-SA
 
 public:
   virtual bool autenticar(const Matricula &, const Senha &) = 0;
@@ -89,7 +89,7 @@ public:
 };
 
 class IServicoParticipante
-{ //IAP-SP
+{ // IAP-SP
 
 public:
   virtual bool cadastrar(Participante) = 0;
@@ -99,13 +99,13 @@ public:
 };
 
 class IServicoPeca
-{ //IAPE-SPE
+{ // IAPE-SPE
 
 public:
-  //Usuário não autenticado
+  // Usuário não autenticado
   virtual void listar() = 0;
 
-  //Usuário autenticado
+  // Usuário autenticado
   virtual bool incluir(Codigo) = 0;
   virtual bool excluir(Codigo) = 0;
   virtual bool editar(Codigo) = 0;
@@ -115,13 +115,13 @@ public:
 };
 
 class IServicoSala
-{ //IASA-SSA
+{ // IASA-SSA
 
 public:
-  //Usuário não autenticado
+  // Usuário não autenticado
   virtual void listar() = 0;
 
-  //Usuário autenticado
+  // Usuário autenticado
   virtual bool incluir(Codigo) = 0;
   virtual bool excluir(Codigo) = 0;
   virtual bool editar(Codigo) = 0;
@@ -131,13 +131,13 @@ public:
 };
 
 class IServicoSessao
-{ //IASE-SSE
+{ // IASE-SSE
 
 public:
-  //Usuário não autenticado
+  // Usuário não autenticado
   virtual void listar() = 0;
 
-  //Usuário autenticado
+  // Usuário autenticado
   virtual bool incluir(Codigo) = 0;
   virtual bool excluir(Codigo) = 0;
   virtual bool editar(Codigo) = 0;
@@ -146,4 +146,4 @@ public:
   virtual ~IServicoSessao() {}
 };
 
-#endif //INTERFACES_H
+#endif // INTERFACES_H
