@@ -14,6 +14,9 @@
 #include "dominios/Senha.h"
 #include "dominios/Codigo.h"
 #include "entidades/Participante.h"
+#include "entidades/Sessao.h"
+#include "entidades/Sala.h"
+#include "entidades/Peca.h"
 
 using namespace std;
 
@@ -106,9 +109,9 @@ public:
   virtual void listar() = 0;
 
   // Usuário autenticado
-  virtual bool incluir(Codigo) = 0;
+  virtual bool incluir(Peca) = 0;
   virtual bool excluir(Codigo) = 0;
-  virtual bool editar(Codigo) = 0;
+  virtual bool editar(Peca) = 0;
   virtual bool visualizar(Codigo) = 0;
 
   virtual ~IServicoPeca() {}
@@ -122,9 +125,9 @@ public:
   virtual void listar() = 0;
 
   // Usuário autenticado
-  virtual bool incluir(Codigo) = 0;
+  virtual bool incluir(Sala) = 0;
   virtual bool excluir(Codigo) = 0;
-  virtual bool editar(Codigo) = 0;
+  virtual bool editar(Sala) = 0;
   virtual bool visualizar(Codigo) = 0;
 
   virtual ~IServicoSala() {}
@@ -138,9 +141,9 @@ public:
   virtual void listar() = 0;
 
   // Usuário autenticado
-  virtual bool incluir(Codigo) = 0;
+  virtual bool incluir(Sessao) = 0;
   virtual bool excluir(Codigo) = 0;
-  virtual bool editar(Codigo) = 0;
+  virtual bool editar(Sessao) = 0;
   virtual bool visualizar(Codigo) = 0;
 
   virtual ~IServicoSessao() {}
